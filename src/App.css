@@ -1,33 +1,66 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+html,
+body {
+  height: 100%;
+  font-family: "Lora", serif;
+  background: #fff;
+  color: #666;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.image-holder {
+  width: 170px;
+  height: 170px;
+  margin: 15px 20px;
+  position: relative;
+  box-shadow: 0 34px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img,
+.image-holder {
+  box-shadow: 0 34px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.meme-bottom-caption {
+  position: absolute;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme-top-caption {
+  position: absolute;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  color: #fff;
+  letter-spacing: 1px;
 }
