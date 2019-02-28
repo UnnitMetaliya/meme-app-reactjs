@@ -1,23 +1,84 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 html,
 body {
   height: 100%;
-  font-family: "Lora", serif;
+  font-family: "Oswald", sans-serif;
   background: #fff;
   color: #666;
-  background: #00b4db; /* fallback for old browsers */
+  background: #0052d4; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #0083b0,
-    #00b4db
+    #6fb1fc,
+    #4364f7,
+    #0052d4
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0083b0,
-    #00b4db
+    #6fb1fc,
+    #4364f7,
+    #0052d4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-primary {
+  background: #666 !important;
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background: #666 !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.navbar-brand {
+  display: block;
+  text-align: center;
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  font-size: 3em;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: #fff;
+}
+
+.modal-body {
+  display: flex;
+  border-radius: 0px;
+  border: 1px none #000000;
+  background-color: rgba(246, 245, 243, 1);
+}
+
+.modal-header {
+  background-color: rgba(246, 245, 243, 1);
+}
+
+.meme-form {
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 300px;
+  border-left: 1px solid #e9ecef;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
 
 .image-holder {
@@ -33,10 +94,42 @@ img,
   border-radius: 12%;
 }
 
+.image-holder:hover {
+  box-shadow: 0px 53px 55px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+}
+
+/* Styling sidebar */
+.sidebar {
+  min-width: 300px;
+  min-height: 100vh;
+  margin-right: 7.5px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.sidebar p {
+  margin-bottom: 300px;
+  font-size: 20px;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 7%;
+  margin-top: 10px;
 }
 
 .meme-bottom-caption {
