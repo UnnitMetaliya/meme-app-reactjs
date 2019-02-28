@@ -208,6 +208,10 @@ class MemeApp extends React.Component {
               Click on any image. Edit top and bottom text. Download it. Enjoy
               your new meme.
             </p>
+            <p>
+              Currently on staging. Needs some fix with making image fit into
+              edit modal.
+            </p>
           </div>
           <div className="content">
             {photos.map((image, index) => (
