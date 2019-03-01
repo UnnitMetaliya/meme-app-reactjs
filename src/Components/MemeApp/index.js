@@ -213,7 +213,7 @@ class MemeApp extends React.Component {
                     height: "100%"
                   }}
                   alt={index}
-                  src={image.src}
+                  src={"." + image.src}
                   onClick={() => this.openImage(index)}
                   role="presentation"
                 />
