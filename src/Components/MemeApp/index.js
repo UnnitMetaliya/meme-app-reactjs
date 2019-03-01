@@ -16,10 +16,8 @@ const photos = [
   { src: "/images/civil-war.jpg" },
   { src: "/images/creepy-smirk.jpg" },
   { src: "/images/crying-woman.jpg" },
-  { src: "/images/cute-baby.jpg" },
   { src: "/images/doubtful-kid.jpg" },
   { src: "/images/eyyy.jpg" },
-  { src: "/images/idareyou.jpg" },
   { src: "/images/interesting-man.jpg" },
   { src: "/images/leo.jpg" },
   { src: "/images/like-this.jpg" },
@@ -32,11 +30,7 @@ const photos = [
   { src: "/images/right-now.jpg" },
   { src: "/images/robert.jpg" },
   { src: "/images/sad-chicken.jpg" },
-  { src: "/images/social-awkward.jpg" },
-  { src: "/images/steve.jpg" },
-  { src: "/images/whaaaat.jpg" },
-  { src: "/images/yessss.jpg" },
-  { src: "/images/bad-luck.jpg" }
+  { src: "/images/social-awkward.jpg" }
 ];
 
 const initialState = {
@@ -187,9 +181,8 @@ class MemeApp extends React.Component {
     const image = photos[this.state.currentImage];
     const base_image = new Image();
     base_image.src = image.src;
-    var wrh = base_image.width / base_image.height;
-    var newWidth = 600;
-    var newHeight = base_image.height / wrh;
+    var newWidth = base_image.width;
+    var newHeight = base_image.height;
     const textStyle = {
       fontFamily: "Impact",
       fontSize: "50px",
@@ -207,10 +200,6 @@ class MemeApp extends React.Component {
             <p>
               Click on any image. Edit top and bottom text. Download it. Enjoy
               your new meme.
-            </p>
-            <p>
-              Currently on staging. Needs some fix with making image fit into
-              edit modal.
             </p>
           </div>
           <div className="content">
@@ -307,7 +296,7 @@ class MemeApp extends React.Component {
                 onClick={() => this.convertSvgToImage()}
                 className="btn btn-primary"
               >
-                Download Meme!
+                Download Your Meme
               </button>
             </div>
           </ModalBody>

@@ -49,14 +49,17 @@ body {
   margin: 0px 0px 20px 0px;
   padding-bottom: 15px;
   border-bottom: 1px solid #fff;
-  font-size: 3em;
-  font-family: "Nunito", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .navbar-brand:focus,
 .navbar-brand:hover,
 .navbar-brand:active {
   color: #fff;
+}
+
+.meme-gen-modal {
+  max-width: fit-content;
 }
 
 .modal-body {
@@ -121,7 +124,8 @@ img,
   color: #fff;
   letter-spacing: 1px;
   font-weight: 300;
-  font-family: "Nunito", sans-serif;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
 }
 
 .content {
